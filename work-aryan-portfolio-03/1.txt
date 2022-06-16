@@ -1,0 +1,29 @@
+SCREEN SIZE < 576px
+    brand text size = 20px
+    p lead size = 20px, weight = 300px
+    p size      = 16px
+    a size      = 16px
+
+    all head font weight 500
+    h1 size = 30px 
+    h2 size = 25px + .9vw
+    h3 size = 23px + .6vw
+
+    large btn text size = 20px
+    small btn text size = 16px
+
+
+
+Breakpoint Class   infix	Dimensions      max-size of container
+X-Small	            None	<576px          
+Small	            sm	    ≥576px          540px
+Medium	            md	    ≥768px          720px
+Large	            lg	    ≥992px          960px
+Extralarge	        xl	    ≥1200px         1140px
+Extraextralarge	    xxl	    ≥1400px         1320px
+
+
+
+colors
+navbar background = 002C3E
+page background = F7F8F3
