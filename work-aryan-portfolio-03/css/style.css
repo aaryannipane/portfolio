@@ -150,7 +150,7 @@ h2.title::after{
 
 .container{
     width: 100%;
-    margin: auto;
+    margin: 0 auto;
 }
 
 section:not(.navbar-section, .footer-section){
@@ -695,35 +695,66 @@ section:not(.navbar-section, .footer-section){
     .container{
         /* width: 90%; */
         max-width: 540px;
-        margin: auto;
+        margin: 0 auto;
     }
 }
 @media (min-width:767px) and (max-width:991px){
     .container{
         /* width: 80%; */
         max-width: 720px;
-        margin: auto;
+        margin: 0 auto;
     }
 }
 @media (min-width:992px) and (max-width:1199px){
     .container{
         /* width: 70%; */
         max-width: 960px;
-        margin: auto;
+        margin: 0 auto;
     }
 }
 @media (min-width:1200px) and (max-width:1400px){
     .container{
         /* width: 70%; */
         max-width: 1140px;
-        margin: auto;
+        margin: 0 auto;
     }
 }
 @media (min-width:1401px){
+    .down-arrow{
+        display: none;
+    }
+    .hero{
+        margin-top: 50px;
+    }
     .container{
         /* width: 70%; */
         max-width: 1320px;
-        margin: auto;
+        margin: 0 auto;
+    }
+
+    section:not(.navbar-section, .footer-section){
+        height: 85vh;
+    }
+}
+
+@media (min-height:700px){
+    .down-arrow{
+        bottom: 150px;
+    }
+    @keyframes down-anime{
+        0%{
+            bottom: 120px;
+        }
+        20%, 100%{
+            bottom: 150px;
+        }
+    }
+}
+
+@media screen and (min-width:426px){
+    .project-section .down-arrow{
+        display: none;
+        /* left: 85%; */
     }
 }
 
