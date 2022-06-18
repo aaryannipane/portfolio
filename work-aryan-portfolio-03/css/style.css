@@ -523,7 +523,7 @@ section:not(.navbar-section, .footer-section){
 .slide img{
     width: 100%;
     /* max-width: 500px; */
-    /* max-height: 350px; */
+    max-height: 355px;
     object-fit: contain;
 }
 
