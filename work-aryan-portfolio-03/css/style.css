@@ -649,6 +649,7 @@ section:not(.navbar-section, .footer-section){
     padding: 5px;
     resize: none;
     border-radius: 5px;
+    border: 2px solid black;
     outline-color: #F7444E;
     background: #FEFEFE;
 }
