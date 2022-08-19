@@ -80,7 +80,8 @@ projectSlider.style.transform = `translateX(${-size * counter}px)`;
 
 
 function nextSlide(e){
-    e.preventDefault();
+    if(e)
+        e.preventDefault();
     
     if(counter >= slides.length-1){
         counter = 0;
@@ -95,7 +96,8 @@ function nextSlide(e){
 }
 
 function prevSlide(e){
-    e.preventDefault();
+    if(e)
+        e.preventDefault();
 
     if(counter <= 0){
         counter = slides.length - 1;
@@ -110,8 +112,19 @@ function prevSlide(e){
 }
 
 
-nextBtn.addEventListener("click", nextSlide);
-prevBtn.addEventListener("click", prevSlide);
+const id = setInterval(()=>{
+    nextSlide();
+}, 3000)
+
+nextBtn.addEventListener("click", (e)=>{
+    clearInterval(id);
+    nextSlide(e);
+});
+prevBtn.addEventListener("click", (e)=>{
+    clearInterval(id);
+    prevSlide(e);
+});
+
 
 
 // projectSlider.addEventListener("transitionend", ()=>{
